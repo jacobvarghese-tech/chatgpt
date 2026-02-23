@@ -1,0 +1,85 @@
+:root {
+  color-scheme: light dark;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f4f6fb;
+}
+
+.app {
+  width: min(90vw, 480px);
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #cfd6e4;
+  border-radius: 8px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  background: #2f67ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #e1e7f2;
+  border-radius: 8px;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #7f8a9f;
+}
+
+.actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.actions button {
+  padding: 0.35rem 0.55rem;
+  background: #e8eeff;
+  color: #2f67ff;
+}
+
+.actions button.delete {
+  background: #ffe8e8;
+  color: #c62828;
+}
